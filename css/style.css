@@ -1123,14 +1123,15 @@ button:hover {
         -ms-flex-direction: column;
         flex-direction: column;
         gap: 14px;
+        align-items: center;
     }
     .carts_threecarts_cart {
-        width: 430px;
+        width: 400px;
     }
     .history_right_img1 {
         position: absolute;
         top: -160px;
-        left: -80px;
+        left: -69px;
     }
     .history_right_img1 img {
         max-width: 200px;
@@ -1138,7 +1139,7 @@ button:hover {
     }
     .history_right_img2 {
         position: absolute;
-        top: 50px;
+        top: 56px;
         right: -90px;
     }
     .history_right_img2 img {
@@ -1317,7 +1318,7 @@ button:hover {
     }
 }
 
-@media(max-width:360px) {
+@media(max-width:380px) {
     .main_header_logo img {
         width: 50px;
         height: 50px;
