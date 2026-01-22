@@ -912,6 +912,12 @@ button:hover {
         left: 20px;
         order: +1;
     }
+    .main_header_logo {
+        margin-right: 250px;
+    }
+    .main_header_right_menu {
+        display: none;
+    }
     .main_header_right_contacts {
         display: none;
     }
@@ -925,7 +931,7 @@ button:hover {
         gap: 0;
     }
     .main_header_right {
-        padding-left: 175px;
+        margin-left: 197px;
     }
     .main_info {
         display: flex;
@@ -981,7 +987,7 @@ button:hover {
         line-height: 28px;
     }
     .text_info_right button {
-        padding: 14px 40px;
+        padding: 14px 30px;
     }
     #dish h2 {
         margin-top: 50px;
@@ -1060,8 +1066,8 @@ button:hover {
     .main_header_logo img {
         width: 70px;
     }
-    .main_header {
-        gap: 306px;
+    .main_header_logo {
+        margin-right: 300px;
     }
     .burger {
         position: relative;
@@ -1316,8 +1322,8 @@ button:hover {
         width: 50px;
         height: 50px;
     }
-    .main_header {
-        gap: 220px;
+    .main_header_logo {
+        margin-right: 225px;
     }
     .burger {
         position: relative;
