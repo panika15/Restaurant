@@ -49,9 +49,7 @@ button:hover {
 /*главная*/
 
 #main {
-    background: url(../img/fon1.jpg) no-repeat center center;
-    background-size: cover;
-    min-height: 800px;
+    background: url(../img/fon1.jpg) no-repeat;
     width: 100%;
 }
 
@@ -210,6 +208,7 @@ button:hover {
 
 .main_button {
     margin-top: 15px;
+    margin-bottom: 230px;
 }
 
 .main_button_adp {
@@ -777,7 +776,6 @@ button:hover {
 /*галерея блюд*/
 
 #gallery {
-    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -805,7 +803,7 @@ button:hover {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -828,14 +826,17 @@ button:hover {
 }
 
 .gallery_pich {
-    position: absolute;
-    top: 4882px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: 315px;
 }
 
 .gallery_pich2 {
-    position: absolute;
-    top: 4882px;
-    left: 1410px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    top: 215px;
 }
 
 
@@ -878,7 +879,160 @@ button:hover {
     height: 732px;
 }
 
-@media(max-width:360px) {
+@media(max-width:1280px) {
+    .container {
+        margin: 0 100px;
+    }
+    .main_header {
+        gap: 215px;
+    }
+    .main_info_text3 span::before {
+        left: 220px;
+    }
+    .main_info_text3 span::after {
+        left: 475px;
+    }
+    .dish_menu_list_1_text {
+        gap: 160px;
+    }
+    .dish_menu_list_1_text p::after {
+        max-width: 140px;
+    }
+}
+
+@media(max-width:769px) {
+    .container {
+        margin: 0 40px;
+    }
+    .burger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        top: 26px;
+        left: 20px;
+        order: +1;
+    }
+    .main_header_right_contacts {
+        display: none;
+    }
+    .main_header_info_right_contacts_bottom {
+        display: none;
+    }
+    .main_header_right_button {
+        display: none;
+    }
+    .main_header {
+        gap: 0;
+    }
+    .main_header_right {
+        padding-left: 190px;
+    }
+    .main_info {
+        display: flex;
+        justify-content: center;
+        max-width: 700px;
+    }
+    .main_info_text3 span::before {
+        left: 228px;
+    }
+    .carts_threecarts {
+        gap: 15px;
+        margin-bottom: 100px;
+    }
+    .carts_threecarts p {
+        text-align: center;
+    }
+    .carts_threecarts span {
+        font-size: 23px;
+        line-height: 25px;
+    }
+    .history_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 75px;
+    }
+    .history_right_img1 {
+        position: absolute;
+        top: -135px;
+    }
+    .history_right_img2 {
+        position: absolute;
+        top: -5px;
+        right: -160px;
+    }
+    .history_right_img3 {
+        position: relative;
+        top: -200px;
+    }
+    .history_right_img4 {
+        position: absolute;
+        top: -160px;
+    }
+    .text_info_left h3 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .text_info_left span {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .text_info_right button {
+        padding: 14px 40px;
+    }
+    #dish h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .dish_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu_cards_card {
+        display: none;
+    }
+    .menu_cards {
+        display: flex;
+        justify-content: center;
+    }
+    .reviews_info {
+        padding-top: 25px;
+    }
+    .reviews_info_img2 {
+        margin-bottom: 10px;
+    }
+    #gallery {
+        position: relative;
+        top: -100px;
+    }
+    .gallery_img {
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery_img_1,
+    .gallery_img_2 {
+        display: flex;
+        justify-content: center;
+    }
+    #cook h2 {
+        position: relative;
+        top: -100px;
+        padding-bottom: 0;
+    }
+    .cook_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .cook_img img {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+@media(max-width:480px) {
     .container {
         margin: 0 15px;
     }
@@ -898,29 +1052,275 @@ button:hover {
         display: none;
     }
     .main_header_logo {
-        padding-top: 20px;
+        padding-top: 25px;
     }
+    .main_header_logo img {
+        width: 70px;
+    }
+    .main_header {
+        gap: 320px;
+    }
+    .burger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        top: 15px;
+    }
+    .main_info_text1 span {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 34px;
+        color: #D67E35;
+    }
+    .main_info_text2 span {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        color: #D67E35;
+    }
+    .main_info_text3 span {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    .main_info_text3 span::after {
+        display: none;
+    }
+    .main_info_text3 span::before {
+        display: none;
+    }
+    .main_button {
+        display: none;
+    }
+    .main_button_adp {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .main_button_adp button {
+        padding: 14px 44px;
+        margin-top: 67px;
+    }
+    .carts_threecarts {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .carts_threecarts_cart {
+        width: 445px;
+    }
+    .history_right_img1 {
+        position: absolute;
+        top: -160px;
+        left: -100px;
+    }
+    .history_right_img1 img {
+        max-width: 200px;
+        object-fit: cover;
+    }
+    .history_right_img2 {
+        position: absolute;
+        top: 12px;
+        right: -110px;
+    }
+    .history_right_img2 img {
+        max-width: 210px;
+        object-fit: cover;
+    }
+    .history_right_img3 {
+        position: relative;
+        top: -200px;
+    }
+    .history_right_img4 {
+        position: absolute;
+        top: -150px;
+    }
+    .text_info {
+        position: relative;
+        top: -50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .text_info_left {
+        text-align: center;
+    }
+    .text_info_left h3 {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 34px;
+        color: #D67E34;
+    }
+    .text_info_left span {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+    }
+    .text_info_right {
+        position: relative;
+        top: -50px;
+    }
+    #dish {
+        margin-bottom: 125px;
+    }
+    #dish h2 {
+        margin-top: 0;
+        margin-bottom: 50px;
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        color: #000000;
+    }
+    .dish_style {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center;
+        color: #D67E34;
+    }
+    .dish_menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .dish_menu_list_1_text p::after {
+        display: none;
+    }
+    .dish_menu_list_1_text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .dish_menu_list_1_text p {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 25px;
+        color: #000000;
+    }
+    .dish_menu_list_1_text span {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        color: #000000;
+        text-align: center;
+    }
+    .dish_menu_list_1 {
+        gap: 12px;
+    }
+    #gallery h2 {
+        margin-top: 140px;
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        color: #000000;
+    }
+    #gallery span {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        color: #D67E34;
+    }
+    .gallery_pich,
+    .gallery_pich2 {
+        display: none;
+    }
+    .gallery_img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    .gallery_img_1 img,
+    .gallery_img_2 img {
+        max-width: 290px;
+        width: 100%;
+    }
+    #cook h2 {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        color: #000000;
+    }
+    #cook span {
+        font-family: 'Tinos';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 46px;
+        color: #D67E34;
+    }
+    .cook_img {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        grid-area: 15px;
+        padding-bottom: 0;
+    }
+    #fon {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:360px) {
     .main_header_logo img {
         width: 50px;
         height: 50px;
     }
-    .logo_burger {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        gap: 240px;
+    .main_header {
+        gap: 220px;
     }
     .burger {
-        display: -webkit-box;
-        display: -ms-flexbox;
+        position: relative;
         display: flex;
-        padding-top: 20px;
+        align-items: center;
+        top: 15px;
     }
     .main_info_text1 span {
         font-family: 'Tinos';
@@ -1020,7 +1420,7 @@ button:hover {
         -ms-flex-direction: column;
         flex-direction: column;
         gap: 15px;
-        margin-top: 60px;
+        margin-top: 30px;
     }
     .history_content {
         display: -webkit-box;
@@ -1039,7 +1439,7 @@ button:hover {
     .history_right_img1 {
         position: relative;
         z-index: +1;
-        left: 15px;
+        left: -95px;
         top: 79px;
     }
     .history_right_img1 img {
@@ -1048,7 +1448,7 @@ button:hover {
     .history_right_img2 {
         position: relative;
         z-index: +1;
-        right: -182px;
+        right: -95px;
         top: -10px;
     }
     .history_right_img2 img {
@@ -1058,7 +1458,7 @@ button:hover {
         position: relative;
         z-index: -1;
         top: -285px;
-        right: -122px;
+        right: -10px;
     }
     .history_right_img3 img {
         width: 138px;
@@ -1067,195 +1467,9 @@ button:hover {
         position: relative;
         z-index: -2;
         top: -499px;
-        left: 175px;
+        left: 65px;
     }
     .history_right_img4 img {
         width: 115px;
-    }
-    .text_info {
-        position: relative;
-        top: -50px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .text_info_left {
-        text-align: center;
-    }
-    .text_info_left h3 {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 34px;
-        color: #D67E34;
-    }
-    .text_info_left span {
-        font-family: 'Open Sans';
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        color: #FFFFFF;
-        padding-bottom: 15px;
-    }
-    .text_info_right {
-        position: relative;
-        top: -50px;
-    }
-    #dish {
-        margin-bottom: 125px;
-    }
-    #dish h2 {
-        margin-top: 0;
-        margin-bottom: 68px;
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        text-align: center;
-        color: #000000;
-    }
-    .dish_style {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        text-align: center;
-        color: #D67E34;
-    }
-    .dish_menu {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .dish_menu_list_1_text p::after {
-        display: none;
-    }
-    .dish_menu_list_1_text {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 5px;
-    }
-    .dish_menu_list_1_text p {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 25px;
-        color: #000000;
-    }
-    .dish_menu_list_1_text span {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 30px;
-        color: #000000;
-        text-align: center;
-    }
-    .dish_menu_list_1 {
-        gap: 12px;
-    }
-    #menu h3 {
-        padding-top: 62px;
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 54px;
-        line-height: 62px;
-        color: #FFFFFF;
-        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
-    }
-    .menu_cards {
-        margin-top: 155px;
-    }
-    .menu_cards_card {
-        display: none;
-    }
-    .menu_cards_card_btn button {
-        background-color: #D67E34;
-    }
-    .reviews_info {
-        padding-top: 5px;
-    }
-    .reviews_info_img2 {
-        margin-bottom: 30px;
-    }
-    #gallery h2 {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        color: #000000;
-    }
-    #gallery span {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        color: #D67E34;
-    }
-    .gallery_pich,
-    .gallery_pich2 {
-        display: none;
-    }
-    .gallery_img {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        gap: 15px;
-    }
-    .gallery_img_1 img,
-    .gallery_img_2 img {
-        max-width: 290px;
-        width: 100%;
-    }
-    #cook h2 {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        color: #000000;
-    }
-    #cook span {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        color: #D67E34;
-    }
-    .cook_img {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-grid-row: 15;
-        grid-area: 15px;
-        padding-bottom: 0;
-    }
-    #fon {
-        margin-top: 20px;
     }
 }
