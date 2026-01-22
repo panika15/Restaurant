@@ -925,7 +925,7 @@ button:hover {
         gap: 0;
     }
     .main_header_right {
-        padding-left: 190px;
+        padding-left: 175px;
     }
     .main_info {
         display: flex;
@@ -933,7 +933,10 @@ button:hover {
         max-width: 700px;
     }
     .main_info_text3 span::before {
-        left: 228px;
+        display: none;
+    }
+    .main_info_text3 span::after {
+        display: none;
     }
     .carts_threecarts {
         gap: 15px;
@@ -1058,7 +1061,7 @@ button:hover {
         width: 70px;
     }
     .main_header {
-        gap: 320px;
+        gap: 306px;
     }
     .burger {
         position: relative;
@@ -1116,12 +1119,12 @@ button:hover {
         gap: 14px;
     }
     .carts_threecarts_cart {
-        width: 445px;
+        width: 430px;
     }
     .history_right_img1 {
         position: absolute;
         top: -160px;
-        left: -100px;
+        left: -80px;
     }
     .history_right_img1 img {
         max-width: 200px;
@@ -1129,8 +1132,8 @@ button:hover {
     }
     .history_right_img2 {
         position: absolute;
-        top: 12px;
-        right: -110px;
+        top: 50px;
+        right: -90px;
     }
     .history_right_img2 img {
         max-width: 210px;
@@ -1142,7 +1145,7 @@ button:hover {
     }
     .history_right_img4 {
         position: absolute;
-        top: -150px;
+        top: -100px;
     }
     .text_info {
         position: relative;
