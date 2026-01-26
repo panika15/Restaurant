@@ -1455,3 +1455,27 @@ button:hover {
         margin-top: 20px;
     }
 }
+
+@media(max-width:480px) {
+    .main_header_logo {
+        margin-right: 215px;
+    }
+    .gallery_left_top,
+    .gallery_right_top {
+        width: 400px;
+        overflow: hidden;
+    }
+    .gallery_left_top img,
+    .gallery_right_top img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .gallery_left_bottom,
+    .gallery_right_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+}
