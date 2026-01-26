@@ -798,30 +798,29 @@ button:hover {
 }
 
 .gallery_img {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.gallery_left,
+.gallery_right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: center;
+    flex-direction: column;
     gap: 30px;
 }
 
-.gallery_img_1 {
+.gallery_left_bottom,
+.gallery_right_bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 30px;
-}
-
-.gallery_img_2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
     gap: 30px;
 }
 
@@ -879,18 +878,33 @@ button:hover {
     height: 732px;
 }
 
-@media(max-width:1280px) {
+@media(max-width:1399px) {
+    .main_header {
+        gap: 185px;
+    }
+    .dish_menu_list_1_text {
+        gap: 130px;
+    }
+    .dish_menu_list_1_text p::after {
+        width: 115px;
+    }
+}
+
+@media(max-width:1199px) {
     .container {
-        margin: 0 100px;
+        margin: 0 50px;
     }
     .main_header {
         gap: 215px;
     }
     .main_info_text3 span::before {
-        left: 220px;
+        left: 175px;
     }
     .main_info_text3 span::after {
-        left: 475px;
+        left: 420px;
+    }
+    .history_content {
+        gap: 280px;
     }
     .dish_menu_list_1_text {
         gap: 160px;
@@ -898,11 +912,18 @@ button:hover {
     .dish_menu_list_1_text p::after {
         max-width: 140px;
     }
+    .gallery_img {
+        gap: 25px;
+    }
+    .cook_img {
+        gap: 25px;
+    }
 }
 
-@media(max-width:769px) {
-    .container {
-        margin: 0 40px;
+@media(max-width:991px) {
+    .main_header {
+        display: flex;
+        gap: 0;
     }
     .burger {
         position: relative;
@@ -913,7 +934,7 @@ button:hover {
         order: +1;
     }
     .main_header_logo {
-        margin-right: 250px;
+        margin-right: 650px;
     }
     .main_header_right_menu {
         display: none;
@@ -927,22 +948,110 @@ button:hover {
     .main_header_right_button {
         display: none;
     }
-    .main_header {
-        gap: 0;
-    }
-    .main_header_right {
-        margin-left: 197px;
-    }
     .main_info {
         display: flex;
         justify-content: center;
-        max-width: 700px;
+        max-width: 900px;
     }
     .main_info_text3 span::before {
         display: none;
     }
     .main_info_text3 span::after {
         display: none;
+    }
+    .history_content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+    .history_right_img1 {
+        position: absolute;
+        top: -80px;
+        left: -290px;
+    }
+    .history_right_img2 {
+        position: absolute;
+        top: 13px;
+        left: 65px;
+    }
+    .history_right_img3 {
+        position: absolute;
+        top: -145px;
+        right: -135px;
+    }
+    .history_right_img4 {
+        position: absolute;
+        top: -100px;
+        left: -20px;
+    }
+    #text {
+        margin-top: 350px;
+    }
+    #dish h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .dish_menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .dish_menu_list_1_text {
+        gap: 17px;
+    }
+    .dish_menu_list_1 {
+        gap: 10px;
+    }
+    .dish_menu_list_1_text p::after {
+        display: none;
+    }
+    .menu_cards_card_img span {
+        padding: 20px;
+        font-size: 25px;
+        top: -40px;
+        left: 95px;
+    }
+    #gallery h2 {
+        margin-top: -60px;
+    }
+    .gallery_pich {
+        top: 260px;
+    }
+    .gallery_pich2 {
+        top: 160px;
+    }
+    .gallery_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cook_img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cook_img img {
+        max-width: 600px;
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    .container {
+        margin: 0 40px;
+    }
+    .main_header_logo {
+        margin-right: 250px;
+    }
+    .main_header_right {
+        margin-left: 197px;
+    }
+    .main_info {
+        max-width: 700px;
     }
     .carts_threecarts {
         gap: 15px;
@@ -964,19 +1073,25 @@ button:hover {
     .history_right_img1 {
         position: absolute;
         top: -135px;
+        left: -185px;
     }
     .history_right_img2 {
         position: absolute;
-        top: -5px;
-        right: -160px;
+        top: -40px;
+        right: -330px;
     }
     .history_right_img3 {
         position: relative;
         top: -200px;
+        left: 10px;
     }
     .history_right_img4 {
         position: absolute;
         top: -160px;
+        left: 100px;
+    }
+    #text {
+        margin-top: 0;
     }
     .text_info_left h3 {
         font-size: 35px;
@@ -997,6 +1112,9 @@ button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .dish_menu_list_1_text {
+        gap: 40px;
     }
     .menu_cards_card {
         display: none;
@@ -1036,14 +1154,14 @@ button:hover {
         padding-bottom: 50px;
     }
     .cook_img img {
-        max-width: 400px;
+        max-width: 538px;
         width: 100%;
     }
 }
 
-@media(max-width:480px) {
+@media(max-width:575px) {
     .container {
-        margin: 0 15px;
+        margin: 0 30px;
     }
     .main_header_right {
         display: none;
@@ -1074,6 +1192,7 @@ button:hover {
         display: flex;
         align-items: center;
         top: 15px;
+        margin-left: 80px;
     }
     .main_info_text1 span {
         font-family: 'Tinos';
@@ -1249,7 +1368,10 @@ button:hover {
         text-align: center;
     }
     .dish_menu_list_1 {
-        gap: 12px;
+        gap: 40px;
+    }
+    .menu_cards_card_img span {
+        left: 135px;
     }
     #gallery h2 {
         margin-top: 140px;
@@ -1283,10 +1405,26 @@ button:hover {
         justify-content: center;
         gap: 15px;
     }
+    .gallery_left,
+    .gallery_right {
+        gap: 15px;
+    }
+    .gallery_left_top img,
+    .gallery_right_top img {
+        max-width: 515px;
+    }
     .gallery_img_1 img,
     .gallery_img_2 img {
         max-width: 290px;
         width: 100%;
+    }
+    .gallery_left_bottom,
+    .gallery_right_bottom {
+        gap: 15px;
+    }
+    .gallery_left_bottom img,
+    .gallery_right_bottom img {
+        max-width: 250px;
     }
     #cook h2 {
         font-family: 'Tinos';
@@ -1315,171 +1453,5 @@ button:hover {
     }
     #fon {
         margin-top: 20px;
-    }
-}
-
-@media(max-width:380px) {
-    .main_header_logo img {
-        width: 50px;
-        height: 50px;
-    }
-    .main_header_logo {
-        margin-right: 225px;
-    }
-    .burger {
-        position: relative;
-        display: flex;
-        align-items: center;
-        top: 15px;
-    }
-    .main_info_text1 span {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 34px;
-        color: #D67E35;
-    }
-    .main_info_text2 span {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        color: #D67E35;
-    }
-    .main_info_text3 span {
-        font-family: 'Open Sans';
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 20px;
-        color: #FFFFFF;
-    }
-    .main_info_text3 span::after {
-        display: none;
-    }
-    .main_info_text3 span::before {
-        display: none;
-    }
-    .main_button {
-        display: none;
-    }
-    .main_button_adp {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .main_button_adp button {
-        padding: 14px 44px;
-        margin-top: 67px;
-    }
-    .main_info {
-        gap: 5px;
-    }
-    .carts_threecarts {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 14px;
-    }
-    .carts_threecarts_cart {
-        width: 330px;
-    }
-    .history_left_top h2 {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        text-align: center;
-        color: #000000;
-    }
-    .history_left_top span {
-        font-family: 'Tinos';
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 46px;
-        text-align: center;
-        color: #D67E34;
-    }
-    .history_left_top {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .history_left_top p {
-        padding-top: 48px;
-        font-family: 'Open Sans';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-        text-align: center;
-        color: #656363;
-    }
-    .history_left_bottom {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 30px;
-    }
-    .history_content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        gap: 0px;
-    }
-    .history_right {
-        max-height: 260px;
-        top: -160px;
-    }
-    .history_right_img1 {
-        position: relative;
-        z-index: +1;
-        left: -95px;
-        top: 79px;
-    }
-    .history_right_img1 img {
-        width: 126px;
-    }
-    .history_right_img2 {
-        position: relative;
-        z-index: +1;
-        right: -95px;
-        top: -10px;
-    }
-    .history_right_img2 img {
-        width: 137px;
-    }
-    .history_right_img3 {
-        position: relative;
-        z-index: -1;
-        top: -285px;
-        right: -10px;
-    }
-    .history_right_img3 img {
-        width: 138px;
-    }
-    .history_right_img4 {
-        position: relative;
-        z-index: -2;
-        top: -499px;
-        left: 65px;
-    }
-    .history_right_img4 img {
-        width: 115px;
     }
 }
